@@ -1,6 +1,5 @@
 $(() => {
     let posts = [];
-    let bloggpage = [];
 
 
 
@@ -21,6 +20,7 @@ $(() => {
         $bloggPosts.empty();
         for (let post of posts) {
             let $post = $(`<div class="product">
+                <div>___________________________________________________________________________________________</div>
                 <div>${post.id}</div>
                 <div>${post.title}</div>
                 <div>${post.body}"></div>
@@ -31,10 +31,6 @@ $(() => {
             $post.appendTo($bloggPosts);
         }
     }
-    $('#commentButton').click(function(){
-//display fuking comments here..
-    });
-
 
 
 });
